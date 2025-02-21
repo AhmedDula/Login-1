@@ -139,3 +139,8 @@ h1 {
     
   }
 }
+@media screen and (max-width: 430px) {
+  input{
+    font-size:17px;
+  }
+}
