@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: rgb(243, 243, 243);
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  width: 86%;
+  max-width: 900px;
+  height: 460px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 2px 20px 0.5px black;
+}
+
+.chil1 {
+  padding: 3rem;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.chil2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  width: 55%;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 162, 255),
+    rgba(0, 0, 255, 0.832)
+  );
+}
+
+input {
+  border-radius: 25px;
+  background-color: rgba(228, 228, 228, 0.857);
+  height: 48px;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 12px;
+}
+.em {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.pss {
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+.check {
+  width: fit-content;
+  height: fit-content;
+  margin-right: 6px;
+}
+.btn {
+  margin-bottom: 20px;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 162, 255),
+    rgba(13, 13, 243, 0.899)
+  );
+  transition-property: all ;
+    transition-duration: 6s;
+    transition-timing-function: ease-in;
+    transition-delay: 4s;
+}
+h2 {
+  margin-bottom: 40px;
+}
+h1 {
+  margin-bottom: 4px;
+}
+.p-web-chil2 {
+  margin-bottom: 18px;
+}
+.btn:hover{
+    background-image: linear-gradient(to right,rgba(42, 96, 212, 0.91) ,rgb(240, 238, 238));
+    cursor: pointer;
+    color: rgba(13, 13, 235, 0.953);
+    
+}
+.sign-up-chil2 {
+  border: 1px rgb(255, 255, 255) solid;
+  border-radius: 20px;
+  text-decoration: none;
+  width: 120px;
+  padding: 10px;
+  color: white;
+}
+.sign-up-chil2:hover{
+ background-color: white;
+ color: rgba(23, 23, 222, 0.907);
+}
+.label-rememberme-chil1 {
+  color: rgba(46, 46, 228, 0.907);
+}
+.checkbox-chil1 {
+  display: flex;
+  justify-content: space-between;
+}
+.forget-chil1 {
+  color: rgba(112, 111, 111, 0.907);
+  text-decoration: none;
+}
+@media screen and (max-width: 900px) {
+  .chil1 {
+    padding: 1rem;
+  }
+}
+@media  screen and (max-width: 684px) {
+  .parent{
+    height: 550px;
+    width: 350px;
+    flex-direction: column-reverse;
+    top: 46%;
+  }
+  .chil1{
+    width: 100%;
+    height: fit-content;
+  }
+  .chil2{
+    width: 100%;
+    
+  }
+}
